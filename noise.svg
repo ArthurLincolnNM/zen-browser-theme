@@ -1,0 +1,20 @@
+<svg
+  xmlns='http://www.w3.org/2000/svg'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  width='300' height='300'>
+
+    <filter id='n' x='0' y='0'>
+            <feTurbulence
+				type="fractalNoise"
+				baseFrequency="19.5"
+				numOctaves="10"
+				result="turbulence"
+			/>
+			<feColorMatrix in="turbulence" result="out" type="luminanceToAlpha" />
+			<feColorMatrix in="out" type="matrix" values="-1 0 0 0 1 
+                                                              0 -1 0 0 1 
+                                                              0 0 -1 0 1
+                                                              0 0 0 1 0"/>
+    </filter>
+    <rect width='300' height='300' filter="url(#n)" opacity='1'/>
+</svg>
