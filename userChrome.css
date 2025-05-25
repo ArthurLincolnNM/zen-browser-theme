@@ -334,7 +334,7 @@ transition: .2s !important;
 
   #reload-button, #stop-button {
     order: -1 !important; 
-    transform: scale(0.93) !important;
+    transform: scale(0.92) !important;
   }
 
   #PanelUI-button {
@@ -530,7 +530,7 @@ position: absolute;
     margin-left: 4.5px !important;
  }
   .tab-icon-image {
-   margin: 4.5px !important;
+   margin: 4px !important;
   }
   .zen-essentials-container {
     margin-bottom: 2px !important;
@@ -880,10 +880,10 @@ toolbarbutton {
 }
 #tabbrowser-tabs .tabbrowser-tab[pending] .tab-text {
   color: light-dark(
-        color-mix(in srgb, currentColor 80%, var(--zen-primary-color) 40%),
+        color-mix(in srgb, gray 90%, var(--zen-primary-color) 50%),
         color-mix(in srgb, currentColor 100%, var(--zen-primary-color) 15%)
     ) !important;
-  opacity: 0.5 !important;
+  opacity: 0.7 !important;
  
 }
 
