@@ -139,13 +139,13 @@ transition: .2s !important;
    =============================== */
 
 #urlbar:not([open]) {
-  border-radius: 14px !important;
+  border-radius: 15px !important;
 
   background-color: light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.1)) !important;
  /* background-color: rgba(25, 24, 26, 0.48) !important; */
   backdrop-filter: blur(4px) !important; 
   transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease !important;
-  height: 42px !important;
+  height: 44px !important;
  
 
   /*
@@ -166,7 +166,7 @@ transition: .2s !important;
 #urlbar[open] #urlbar-background {
   backdrop-filter: blur(30px) saturate(175%) !important;
   background: light-dark(rgba(255, 255, 255, .8), rgba(22, 22, 22, 0.84)) !important;
-  /*border: 1px solid rgba(66, 66, 66, 0.15) !important; */
+  /* border: 4px solid rgba(250, 250, 250, 0.08) !important; */
   
   border-radius: 20px !important;
   position: relative; 
@@ -239,7 +239,7 @@ transition: .2s !important;
 
 .zen-essentials-container .tab-background::before {
   margin: 2px !important; 
-   border-radius: 12px !important; 
+   border-radius: 13px !important; 
   /*box-shadow: 
       inset 0px 1px 2px 2px rgba(255, 255, 255, .2),
       inset 0px -6px 3px -2px rgba(0, 0, 0, .1) !important; */
@@ -278,7 +278,7 @@ transition: .2s !important;
   --custom-selected-tab-color: rgba(28, 28, 28, 0.79);
   --tab-color: light-dark(
   color-mix(in srgb, white 70%, var(--zen-primary-color) 1%),
-  color-mix(in srgb, var(--zen-primary-color) 10%, rgba(240, 240, 240, 0.22))
+  color-mix(in srgb, var(--zen-primary-color) 10%, rgba(240, 240, 240, 0.16))
 ) !important;
   --tab-color-white: rgba(190, 190, 190, 0.4) !important;  
   
@@ -434,12 +434,14 @@ transition: .2s !important;
 }
 
 .tabbrowser-tab[zen-essential="true"]:not([visuallyselected]):not([hover]) .tab-background{
-
   background-color: light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.06)) !important;
- 
-   box-shadow: inset 0px -3px 3px -3px rgba(0, 0, 0, .1) , inset 0px 1px 1px rgba(255, 255, 255, .) !important;  
+  box-shadow: inset 0px -3px 3px -3px rgba(0, 0, 0, .1) , inset 0px 1px 1px rgba(255, 255, 255, .03) !important;
   
 }
+.zen-essentials-container {
+  gap: 4.5px !important;
+}
+
 
 .tabbrowser-tab[zen-essential="true"]:not([visuallyselected]):not([hover]) .tab-icon-image {
   transition: all .15s ease-out;
@@ -518,7 +520,7 @@ position: absolute;
 }
 
 .tabbrowser-tab[zen-essential="true"]:not([zen-glance-tab="true"]) .tab-background {
- border-radius: 14px !important;
+ border-radius: 15px !important;
  
 }
 
@@ -534,7 +536,7 @@ position: absolute;
   }
   .zen-essentials-container {
     margin-bottom: 2px !important;
-     margin-top: 1px !important;
+     margin-top: 3.5px !important;
   } 
   
 }
@@ -759,12 +761,12 @@ toolbarbutton {
   }
   #zen-media-controls-hbox {
       opacity: 0.8 !important; 
-      margin-top: -4px !important;
-    margin-bottom: -4px !important;
+      margin-top: -3px !important;
+    margin-bottom: -3px !important;
   }
   #zen-media-progress-hbox {
-    margin-top: -6px !important;
-    margin-bottom: -7px !important;
+    margin-top: -5px !important;
+    margin-bottom: -6px !important;
   }
 }
 
