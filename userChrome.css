@@ -12,11 +12,11 @@
 
 /* Define a fonte padrão para todos os elementos */
 * { 
-   font-family: Inter Tight !important; 
+   font-family: SF Pro Rounded !important; 
 
-    font-weight: 410 !important; 
+    font-weight: 300 !important; 
     letter-spacing: 0.3px !important;  
-    word-spacing: -0.04px !important;
+    word-spacing: -0.18px !important;
  
     text-rendering: geometricprecision  !important;
    -webkit-font-smoothing: antialiased;
@@ -411,9 +411,7 @@ transition: .2s !important;
    .tabbrowser-tab[visuallyselected]:not([zen-glance-tab="true"]) .tab-background {
       box-shadow: var(--tab-shadow), inset 0 1px 1px rgba(255, 255, 255, 0.16), inset 0 -2px 3px rgba(0, 0, 0, .1) !important;
    }
-  * {
-    font-weight: 400 !important;
-  }
+  
 }
 
 .tabbrowser-tab:not([zen-essential="true"]):not([pinned]):not([zen-glance-tab="true"]) .tab-background {
